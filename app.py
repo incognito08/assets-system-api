@@ -4,7 +4,7 @@ from flask import Flask, request
 from flask_sqlalchemy import SQLAlchemy
 from flask_cors import CORS
 
-params = urllib.parse.quote_plus("DRIVER={ODBC Driver 17 for SQL Server};SERVER=sn-asset.database.windows.net;DATABASE=db-asset;UID=adminrdc;PWD=Welcome123")
+params = urllib.parse.quote_plus("DRIVER={ODBC Driver 18 for SQL Server};SERVER=sn-asset.database.windows.net;DATABASE=db-asset;UID=adminrdc;PWD=Welcome123")
 
 app = Flask(__name__)
 cors = CORS(app, resources={r'/assets/*': {'origins': '*'}})
